@@ -2,7 +2,7 @@ from openai import OpenAI
 import json
 client = OpenAI(
     api_key='EMPTY',
-    base_url=f'http://127.0.0.1:8000/v1',
+    base_url=f'http://127.0.0.1:8005/v1',
 )
 models = [model.id for model in client.models.list().data]
 
